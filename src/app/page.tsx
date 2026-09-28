@@ -2,6 +2,7 @@
 import Navbar from '../frontend/layouts/Navbar';
 import Footer from '../frontend/layouts/Footer';
 import HeroSection from '../frontend/features/HeroSection';
+import ClientLogoSection from '../frontend/features/ClientLogoSection';
 import PortfolioSection from '../frontend/features/PortfolioSection';
 import BookingForm from '../frontend/features/BookingForm';
 
@@ -10,6 +11,7 @@ export default function PublicLandingPage() {
     <main className="min-h-screen bg-white text-gray-900 selection:bg-amber-500 selection:text-white">
       <Navbar />
       <HeroSection />
+      <ClientLogoSection />
       <PortfolioSection />
       <BookingForm />
       <Footer />
