@@ -3,8 +3,14 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative bg-gradient-to-br from-indigo-900 via-indigo-800 to-gray-900 text-white py-24 lg:py-32 overflow-hidden">
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <section 
+      id="home" 
+      className="relative bg-cover bg-center bg-no-repeat text-white py-24 lg:py-32 overflow-hidden"
+      style={{ backgroundImage: "url('/images/bg.jpg')" }}
+    >
+      {/* Overlay gelap agar teks tetap kontras dan mudah dibaca */}
+      <div className="absolute inset-0 bg-gray-900/75 backdrop-blur-[2px]"></div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-block bg-amber-500/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide uppercase border border-amber-500/30">
           Event Organizer #1 di Pontianak & Kalbar
